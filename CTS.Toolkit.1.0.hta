@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<head>
+	<meta http-equiv="x-ua-compatible" content="ie=edge" /><html lang="en">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <title>CTS Toolkit 1.0 (Now With JavaScript!)</title>
+</head>
+<style>
+body { 
+	background: url("http://www.nscorp.com/content/nscorp/en/multimedia-gallery/photos/ns-2013-calendar-august/_jcr_content/feature.img.jpg/1422460921786.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: black;
+	margin: 5%;
+	
+}
+
+.row {
+	//border: 5px solid red;
+	overflow: hidden;
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+	//border: 5px solid red;
+}
+.input-group-addon{
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	
+}
+.btn:hover {
+	opacity: 1;
+}
+.btn {
+	opacity: .9;
+}
+.panel:hover {
+	opacity: 1;
+}
+.panel {
+	opacity: .8;
+}
+</style>
+<body>
+<div class="container-fluid">
+	<div class="page-header">
+	  <h1><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> CTS Toolkit <small> 1.0</small></h1>
+	</div>
+	<div class="input-group">
+	  <div class="input-group-addon" role="group" aria-label="..." id="basic-addon2">
+		<div class="dropdown">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			Computer Name
+			<span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			<li><a href="#">Computer Name</a></li>
+			<li><a href="#">RACF ID</a></li>
+			<li><a href="#">User Name</a></li>
+			<li><a href="#">Serial Number</a></li>
+		  </ul>
+		</div>
+		</div>	  
+	  <input type="text" class="form-control input-lg" placeholder="Input Computer Name" aria-describedby="basic-addon2">
+		<div class="input-group-addon" role="group" aria-label="..." id="basic-addon2">
+		  <button type="button" class="btn btn-default">Online <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+		  <button type="button" class="btn btn-primary">Copy <span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button>
+		  <button type="button" class="btn btn-info">History <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></button>
+		  <button type="button" class="btn btn-danger">Reset <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+		</div>	  
+	</div>
+		  <div>
+	<div class="page-header">
+	  <h3><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Tools</h3>
+	</div>
+			<div class="row">
+			  <div class="col-md-2">
+				<div class="btn-group-vertical" role="group" aria-label="...">
+				  <button type="button" class="btn btn-default">Query PC</button>
+				  <button type="button" class="btn btn-default">Ping</button>
+				  <button type="button" class="btn btn-default">Ping -T</button>
+				  <button type="button" class="btn btn-default">VNC</button>
+				  <button type="button" class="btn btn-default">Remote Desktop</button>
+				  <button type="button" class="btn btn-default">Remote Assistance</button>
+				  <button type="button" class="btn btn-default">C$ Share</button>
+				  <button type="button" class="btn btn-default">Event Viewer</button>
+				  <button type="button" class="btn btn-default">Computer Management</button>
+				  <button type="button" class="btn btn-default">GPO Results</button>
+				  <button type="button" class="btn btn-default">SCCM Client</button>
+				  <button type="button" class="btn btn-default">SCCM Search</button>
+				  <button type="button" class="btn btn-default">Search AD</button>
+				  <button type="button" class="btn btn-default">Search BGinfo</button>
+				  <button type="button" class="btn btn-default">PC WMI Recon</button>
+				</div>
+
+			  </div>
+			  <div class="col-md-10 test">
+				<div class="panel panel-default">
+				  <div class="panel-body" style="height: 500px">
+					Hello World!
+				  <button type="button" class="btn btn-primary">Copy <span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+
+	
+	
+	
+	
+	
+</body>
+<script>
+$(document).ready(function(){
+$("input[type=text]").keyup(function(){
+  $(this).val( $(this).val().toUpperCase() );
+});
+
+});
+</script>
+</html>
